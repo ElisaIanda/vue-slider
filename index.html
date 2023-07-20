@@ -32,7 +32,7 @@
                 <div class="thumbs">
                     <div class="prev" @click="pevSlide"></div>
                     <div class="next" @click="nextSlide"></div>
-                    <div class="thumb" @click="onClick(i)"
+                    <div class="thumb" 
                     v-bind:class="slideIndex == i ? 'active' : ' '  " 
                     v-for="(slide, i) in slides">
                         <img :src="slide.image" :alt="slide.title" />
@@ -54,7 +54,7 @@
                     </div> -->
                 </div>
                 
-                <!-- Versione Prova -->
+                <!-- Versione 2 provato un altro metodo -->
                 <!-- <div class="item">
                     <img v-bind:src="slides[slideIndex].image" alt="slides[slideIndex].title" />
                     <div class="text">
@@ -73,7 +73,7 @@
                     v-for="(singleSlide, i) in slides">
                         <img :src="singleSlide.image" :alt="singleSlide.title" />
                     </div>
-                    <!-- <div class="thumb active">
+                    <div class="thumb active">
                         <img src="img/01.webp" alt="Svezia" />
                     </div> -->
                     <!-- <div class="thumb">
@@ -88,7 +88,7 @@
                     <div class="thumb">
                         <img src="img/05.webp" alt="Avengers" />
                     </div> -->
-                </div> -->
+                </div>
 
                 <!-- <div class="item">
                     <img src="img/01.webp" alt="Spiderman" />
