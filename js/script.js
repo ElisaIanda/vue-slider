@@ -33,18 +33,18 @@ const app = Vue.createApp({
     },
     methods: {
 
-        pevSlide() {
+        prevSlide() {
 
             this.slideIndex--;
             if (this.slideIndex < 0) {
-                this.slideIndex = this.slides.leght - 1;
+                this.slideIndex = this.slides.length - 1;
             }
 
         },
         nextSlide() {
 
             this.slideIndex++;
-            if (this.slideIndex > this.slides.leght - 1) {
+            if (this.slideIndex > this.slides.length - 1) {
                 this.slideIndex = 0;
             }
         },
@@ -55,7 +55,7 @@ const app = Vue.createApp({
 
         setInterval(() => {
             this.prevSlide();
-        }, 1000)
+        }, 3000)
     },
 });
 
